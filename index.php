@@ -1,6 +1,12 @@
 <?php
 
 use Lib\MainLayout;
+use Lib\Request;
+
+MainLayout::$title = 'Swagger Docs';
+MainLayout::$description = 'Swagger Docs for the API';
+
+$baseUrl = Request::baseUrl;
 
 $mainLayoutHead = [
     "<link rel='stylesheet' type='text/css' href='$baseUrl/swagger-docs/dist/swagger-ui.css' />",
@@ -20,5 +26,3 @@ $mainLayoutFooter = [
 MainLayout::addFooterScript(...$mainLayoutFooter);
 
 ?>
-
-<div id="swagger-ui"></div>

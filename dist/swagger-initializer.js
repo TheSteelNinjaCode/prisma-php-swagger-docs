@@ -19,7 +19,7 @@ window.onload = function () {
 
   window.ui = SwaggerUIBundle({
     url: swaggerUrl,
-    dom_id: "#swagger-ui",
+    dom_id: "#pphp-7CA7BB68A3656A88",
     deepLinking: true,
     presets: [SwaggerUIBundle.presets.apis, SwaggerUIStandalonePreset],
     plugins: [SwaggerUIBundle.plugins.DownloadUrl],
