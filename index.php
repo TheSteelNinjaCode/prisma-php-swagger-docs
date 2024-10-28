@@ -24,5 +24,3 @@ $mainLayoutFooter = [
 ];
 
 MainLayout::addFooterScript(...$mainLayoutFooter);
-
-?>

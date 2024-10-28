@@ -32,5 +32,16 @@ window.onload = function () {
     },
   });
 
+  function updateNoStyleAnchors() {
+    const mainContent = document.getElementById("pphp-7CA7BB68A3656A88");
+    const allNoStyleAnchors = mainContent.getElementsByClassName("nostyle");
+    Array.from(allNoStyleAnchors).forEach((anchor) => {
+      anchor.setAttribute("href", "");
+    });
+  }
+
+  // Call the function to update the anchors after a short delay
+  setTimeout(updateNoStyleAnchors, 1000); // Adjust delay based on content load time
+
   //</editor-fold>
 };
