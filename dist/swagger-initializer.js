@@ -19,7 +19,7 @@ window.onload = function () {
 
   window.ui = SwaggerUIBundle({
     url: swaggerUrl,
-    dom_id: "#pphp-7CA7BB68A3656A88",
+    dom_id: "body",
     deepLinking: true,
     presets: [SwaggerUIBundle.presets.apis, SwaggerUIStandalonePreset],
     plugins: [SwaggerUIBundle.plugins.DownloadUrl],
@@ -33,8 +33,7 @@ window.onload = function () {
   });
 
   function updateNoStyleAnchors() {
-    const mainContent = document.getElementById("pphp-7CA7BB68A3656A88");
-    const allNoStyleAnchors = mainContent.getElementsByClassName("nostyle");
+    const allNoStyleAnchors = document.body.getElementsByClassName("nostyle");
     Array.from(allNoStyleAnchors).forEach((anchor) => {
       anchor.setAttribute("href", "");
     });
