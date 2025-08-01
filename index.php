@@ -18,9 +18,9 @@ $mainLayoutHead = [
 MainLayout::addHeadScript(...$mainLayoutHead);
 
 $mainLayoutFooter = [
-    "<script src='$baseUrl/swagger-docs/dist/swagger-ui-bundle.js' charset='UTF-8'></script>",
-    "<script src='$baseUrl/swagger-docs/dist/swagger-ui-standalone-preset.js' charset='UTF-8'></script>",
-    "<script src='$baseUrl/swagger-docs/dist/swagger-initializer.js' charset='UTF-8'></script>",
+    "<script type='text/javascript' src='$baseUrl/swagger-docs/dist/swagger-ui-bundle.js' charset='UTF-8'></script>",
+    "<script type='text/javascript' src='$baseUrl/swagger-docs/dist/swagger-ui-standalone-preset.js' charset='UTF-8'></script>",
+    "<script type='text/javascript' src='$baseUrl/swagger-docs/dist/swagger-initializer.js' charset='UTF-8'></script>",
 ];
 
 MainLayout::addFooterScript(...$mainLayoutFooter);
