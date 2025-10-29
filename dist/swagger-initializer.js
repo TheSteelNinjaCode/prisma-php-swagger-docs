@@ -27,7 +27,7 @@ window.onload = function () {
 
     // Add custom header using requestInterceptor
     requestInterceptor: (request) => {
-      request.headers["HTTP_PPHP_X_FILE_REQUEST"] = "true"; // Set your custom header here
+      request.headers["HTTP_PP_X_FILE_REQUEST"] = "true"; // Set your custom header here
       return request;
     },
   });
